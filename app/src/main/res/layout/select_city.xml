@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#ffcd2626">
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:text="当前城市：北京" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_action_city"
+            android:id="@+id/title_back" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/title_back"
+            android:layout_toEndOf="@+id/title_back"
+            android:background="#A71717" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_container"
+        android:hint="搜索全国城市（中文、全拼、首字母）"
+        android:layout_margin="10dp"
+        android:background="@drawable/contact_search_box_edittext_keyword_background"
+        android:drawableLeft="@drawable/magnifying_glass"
+        android:drawableStart="@drawable/magnifying_glass"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:textColor="#ff000000"
+        android:textColorHint="#ffcccccc"
+        android:id="@+id/city_search" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/city_search"
+        android:id="@+id/city_list" />
+
+</RelativeLayout>

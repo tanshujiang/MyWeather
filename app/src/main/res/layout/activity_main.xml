@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="#ffcd2626"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:id="@+id/title_city_manager"
+            android:src="@drawable/title_city" />
+
+        <ImageView
+            android:layout_width="1.0dip"
+            android:layout_height="45.0dip"
+            android:id="@+id/city_seperator"
+            android:layout_marginTop="2.0dip"
+            android:layout_toRightOf="@+id/title_city_manager"
+            android:background="#A71717" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/title_city_name"
+            android:layout_toRightOf="@+id/city_seperator"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:text="@string/title_city"
+            android:textColor="#ffffffff"
+            android:textSize="22.0sp" />
+
+        <ImageView
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:visibility="visible"
+            android:id="@+id/title_update_btn"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:src="@drawable/title_update" />
+        <ProgressBar
+            android:id="@+id/title_update_progress"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            style="@style/title_update_progressbar_style"/>
+        <!--<style name="title_update_progressbar_style">
+            <item name="android:maxWidth">45.0dip</item>
+            <item name="android:maxHeight">45.0dip</item>
+            <item name="android:indeterminateDrawable">@anim/title_update_anim</item>
+            <item name="android:minWidth">45.0dip</item>
+            <item name="android:minHeight">45.0dip</item>
+        </style>-->
+
+        <ImageView
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:id="@+id/title_share"
+            android:layout_toLeftOf="@id/title_update_btn"
+            android:src="@drawable/title_share" />
+
+        <ImageView
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:id="@+id/title_location"
+            android:layout_toLeftOf="@id/title_share"
+            android:src="@drawable/base_action_bar_action_city" />
+    </RelativeLayout>
+
+    <view
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="android.support.v4.view.ViewPager"
+        android:id="@+id/city_info"
+        android:layout_below="@+id/title" />
+
+</RelativeLayout>

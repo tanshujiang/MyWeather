@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="city_text">45sp</dimen>
+    <dimen name="publish_time_text">18sp</dimen>
+    <dimen name="humidity_text">18sp</dimen>
+    <dimen name="PM25_text">18sp</dimen>
+    <dimen name="PM25_value_text">36sp</dimen>
+    <dimen name="pollution_text">22sp</dimen>
+    <dimen name="today_text">22sp</dimen>
+    <dimen name="temperature_text">22sp</dimen>
+    <dimen name="whether_text">22sp</dimen>
+    <dimen name="wind_force_text">22sp</dimen>
+    <dimen name="pollution_image_width">70dp</dimen>
+    <dimen name="pollution_image_height">70dp</dimen>
+    <dimen name="weather_image_width">140dp</dimen>
+    <dimen name="weather_image_height">140dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+</resources>
